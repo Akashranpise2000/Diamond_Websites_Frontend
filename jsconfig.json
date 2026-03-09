@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "baseUrl": "src",
+    "paths": {
+      "@/*": ["./*"],
+      "@components/*": ["components/*"],
+      "@pages/*": ["pages/*"],
+      "@redux/*": ["redux/*"],
+      "@utils/*": ["utils/*"],
+      "@hooks/*": ["hooks/*"],
+      "@data/*": ["data/*"],
+      "@assets/*": ["assets/*"],
+      "@styles/*": ["styles/*"],
+      "@routes/*": ["routes/*"]
+    },
+    "checkJs": false,
+    "module": "esnext",
+    "moduleResolution": "bundler"
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "build"]
+}

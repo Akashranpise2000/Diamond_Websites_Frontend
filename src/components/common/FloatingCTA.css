@@ -1,0 +1,194 @@
+/* Floating Call-to-Action Buttons */
+.floating-cta {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  z-index: 9999;
+}
+
+.floating-cta__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 20px;
+  border-radius: 50px;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.floating-cta__button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
+}
+
+.floating-cta__button:active {
+  transform: translateY(-1px);
+}
+
+.floating-cta__icon {
+  font-size: 18px;
+}
+
+.floating-cta__text {
+  display: inline;
+}
+
+/* Call Now Button - Orange color */
+.floating-cta__button--call {
+  background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
+  color: #ffffff;
+}
+
+.floating-cta__button--call:hover {
+  background: linear-gradient(135deg, #ff7d4d 0%, #ffa633 100%);
+}
+
+/* WhatsApp Button - Green color */
+.floating-cta__button--whatsapp {
+  background: linear-gradient(135deg, #25D366 0%, #20b357 100%);
+  color: #ffffff;
+}
+
+.floating-cta__button--whatsapp:hover {
+  background: linear-gradient(135deg, #2ee076 0%, #26c560 100%);
+}
+
+/* Pulse animation for attention */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
+  }
+  70% {
+    box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}
+
+.floating-cta__button--whatsapp {
+  animation: pulse 2.5s infinite;
+}
+
+/* Responsive Design */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .floating-cta {
+    bottom: 20px;
+    right: 20px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .floating-cta {
+    bottom: 16px;
+    right: 16px;
+    gap: 10px;
+  }
+
+  .floating-cta__button {
+    padding: 14px 18px;
+    font-size: 14px;
+    border-radius: 50px;
+  }
+
+  .floating-cta__icon {
+    font-size: 20px;
+  }
+
+  /* On mobile, show icons only to save space */
+  .floating-cta__text {
+    display: none;
+  }
+
+  .floating-cta__button {
+    padding: 14px;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+  }
+
+  /* Switch to vertical column on mobile for better fit */
+  .floating-cta {
+    flex-direction: column;
+  }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+  .floating-cta {
+    bottom: 14px;
+    right: 14px;
+    gap: 8px;
+  }
+
+  .floating-cta__button {
+    padding: 12px;
+    width: 52px;
+    height: 52px;
+  }
+
+  .floating-cta__icon {
+    font-size: 22px;
+  }
+}
+
+/* Large screens */
+@media (min-width: 1200px) {
+  .floating-cta {
+    bottom: 32px;
+    right: 32px;
+    gap: 16px;
+  }
+
+  .floating-cta__button {
+    padding: 14px 24px;
+    font-size: 16px;
+  }
+
+  .floating-cta__icon {
+    font-size: 20px;
+  }
+}
+
+/* Accessibility - Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .floating-cta__button {
+    transition: none;
+  }
+
+  .floating-cta__button--whatsapp {
+    animation: none;
+  }
+}
+
+/* Ensure buttons are accessible for keyboard users */
+.floating-cta__button:focus {
+  outline: 3px solid rgba(255, 255, 255, 0.7);
+  outline-offset: 2px;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .floating-cta__button--call {
+    background: #ff5500;
+    border: 2px solid #ffffff;
+  }
+
+  .floating-cta__button--whatsapp {
+    background: #008000;
+    border: 2px solid #ffffff;
+  }
+}

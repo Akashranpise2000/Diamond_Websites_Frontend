@@ -1,0 +1,270 @@
+.service-detail-page {
+  padding: 2rem 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.service-hero {
+  margin-bottom: 3rem;
+}
+
+.service-hero-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.service-image-large {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.service-image-large img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Video Container */
+.service-video-container {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background: #000;
+}
+
+.service-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.service-video-badge {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  background: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  pointer-events: none;
+}
+
+.video-icon {
+  font-size: 0.75rem;
+}
+
+.service-info h1 {
+  font-size: 2.5rem;
+  color: #1f2937;
+  margin-bottom: 1rem;
+}
+
+.service-info .service-description {
+  font-size: 1.125rem;
+  color: #6b7280;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.service-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: #f9fafb;
+  border-radius: 8px;
+}
+
+.service-price .price {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1f2937;
+  display: block;
+}
+
+.service-price .duration {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.service-category {
+  background: #dbeafe;
+  color: #1e40af;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.service-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn--large {
+  padding: 1rem 2rem;
+  font-size: 1.125rem;
+}
+
+.service-features {
+  margin-bottom: 3rem;
+}
+
+.service-features h2 {
+  font-size: 2rem;
+  color: #1f2937;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* Estimate Form Section */
+.service-estimate-form {
+  max-width: 600px;
+  margin: 0 auto 3rem;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.feature-check {
+  color: #10b981;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.service-cta {
+  text-align: center;
+  padding: 3rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+}
+
+.service-cta h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.service-cta p {
+  font-size: 1.125rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.not-found {
+  text-align: center;
+  padding: 3rem;
+}
+
+.not-found h1 {
+  font-size: 2.5rem;
+  color: #1f2937;
+  margin-bottom: 1rem;
+}
+
+.not-found p {
+  font-size: 1.125rem;
+  color: #6b7280;
+  margin-bottom: 2rem;
+}
+
+.loading {
+  text-align: center;
+  padding: 3rem;
+  color: #6b7280;
+  font-size: 1.125rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .service-detail-page {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .service-hero-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .service-image-large img {
+    height: 250px;
+  }
+
+  .service-video-container {
+    height: 250px;
+  }
+
+  .service-info h1 {
+    font-size: 2rem;
+  }
+
+  .service-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .service-actions {
+    flex-direction: column;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-cta {
+    padding: 2rem 1rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .service-info h1 {
+    font-size: 1.75rem;
+  }
+
+  .service-features h2 {
+    font-size: 1.5rem;
+  }
+
+  .service-cta h2 {
+    font-size: 1.5rem;
+  }
+}

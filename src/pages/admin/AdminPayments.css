@@ -1,0 +1,367 @@
+.admin-payments {
+  padding: 20px;
+}
+
+.admin-payments .page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.admin-payments .page-header h1 {
+  font-size: 24px;
+  margin: 0;
+  color: #333;
+}
+
+.admin-payments .filter-controls {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.admin-payments .filter-group {
+  display: flex;
+  align-items: center;
+}
+
+.admin-payments .search-input {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 250px;
+}
+
+.admin-payments .filter-select,
+.admin-payments .date-input {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  background: white;
+}
+
+.admin-payments .payments-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.admin-payments .stat-card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.admin-payments .stat-card h3 {
+  margin: 0;
+  font-size: 28px;
+  color: #2c3e50;
+}
+
+.admin-payments .stat-card p {
+  margin: 5px 0 0;
+  color: #666;
+  font-size: 14px;
+}
+
+.admin-payments .method-breakdown {
+  margin-bottom: 25px;
+}
+
+.admin-payments .method-breakdown h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.admin-payments .method-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+}
+
+.admin-payments .method-card {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.admin-payments .method-name {
+  font-weight: bold;
+  color: #333;
+  text-transform: capitalize;
+}
+
+.admin-payments .method-count {
+  font-size: 13px;
+  color: #666;
+}
+
+.admin-payments .method-amount {
+  font-size: 16px;
+  color: #27ae60;
+  font-weight: 600;
+}
+
+.admin-payments .payments-table-container {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow-x: auto;
+}
+
+.admin-payments .payments-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.admin-payments .payments-table th,
+.admin-payments .payments-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.admin-payments .payments-table th {
+  background: #f8f9fa;
+  font-weight: 600;
+  color: #333;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.admin-payments .payments-table tbody tr:hover {
+  background: #f8f9fa;
+}
+
+.admin-payments .transaction-id {
+  font-family: monospace;
+  font-size: 12px;
+  color: #666;
+}
+
+.admin-payments .customer-info,
+.admin-payments .booking-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-payments .customer-name,
+.admin-payments .booking-info > div:first-child {
+  font-weight: 500;
+  color: #333;
+}
+
+.admin-payments .customer-email,
+.admin-payments .booking-date {
+  font-size: 12px;
+  color: #666;
+}
+
+.admin-payments .amount {
+  font-weight: 600;
+  color: #27ae60;
+}
+
+.admin-payments .status {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.admin-payments .status--success {
+  background: #d4edda;
+  color: #155724;
+}
+
+.admin-payments .status--warning {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.admin-payments .status--danger {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.admin-payments .status--info {
+  background: #d1ecf1;
+  color: #0c5460;
+}
+
+.admin-payments .status--secondary {
+  background: #e2e3e5;
+  color: #383d41;
+}
+
+.admin-payments .no-payments {
+  text-align: center;
+  padding: 40px;
+  color: #666;
+}
+
+.admin-payments .pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.admin-payments .pagination-info {
+  color: #666;
+  font-size: 14px;
+}
+
+.admin-payments .btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+
+.admin-payments .btn--small {
+  padding: 6px 12px;
+  font-size: 13px;
+}
+
+.admin-payments .btn--secondary {
+  background: #6c757d;
+  color: white;
+}
+
+.admin-payments .btn--secondary:hover {
+  background: #5a6268;
+}
+
+.admin-payments .btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Modal Styles */
+.admin-payments .modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.admin-payments .modal-content {
+  background: white;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 500px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.admin-payments .modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.admin-payments .modal-header h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.admin-payments .close-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #666;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+}
+
+.admin-payments .close-btn:hover {
+  color: #333;
+}
+
+.admin-payments .modal-body {
+  padding: 20px;
+}
+
+.admin-payments .detail-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.admin-payments .detail-label {
+  font-weight: 500;
+  color: #666;
+}
+
+.admin-payments .detail-value {
+  color: #333;
+}
+
+.admin-payments .refund-info {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 2px solid #eee;
+}
+
+.admin-payments .refund-info h4 {
+  margin: 0 0 15px;
+  color: #dc3545;
+}
+
+.loading {
+  text-align: center;
+  padding: 40px;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .admin-payments .page-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .admin-payments .filter-controls {
+    width: 100%;
+  }
+
+  .admin-payments .search-input {
+    width: 100%;
+  }
+
+  .admin-payments .payments-table th:nth-child(4),
+  .admin-payments .payments-table td:nth-child(4),
+  .admin-payments .payments-table th:nth-child(5),
+  .admin-payments .payments-table td:nth-child(5) {
+    display: none;
+  }
+}
