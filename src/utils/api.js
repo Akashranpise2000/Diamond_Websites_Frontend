@@ -1,6 +1,8 @@
 import axios from 'axios';
 
 // Configure axios defaults
+// For production, set REACT_APP_API_URL in your .env file
+// Example production URL: https://your-api.onrender.com/api/v1
 const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000/api/v1';
 
 axios.defaults.baseURL = API_BASE_URL;

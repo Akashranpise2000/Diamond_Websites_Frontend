@@ -1,0 +1,19 @@
+# Render Blueprint Configuration for Diamond House Cleaning Frontend
+# This file defines the frontend service for Render deployment
+
+services:
+  - type: web
+    name: diamond-house-cleaning-frontend
+    env: static
+    region: oregon
+    buildCommand: npm run build
+    staticPublishDir: build
+    envVars:
+      # API URL - Update this to your production backend URL after deployment
+      - key: REACT_APP_API_URL
+        value: https://your-backend-service.onrender.com/api/v1
+      - key: REACT_APP_ENABLE_ANALYTICS
+        value: "false"
+      - key: REACT_APP_ENABLE_LIVE_CHAT
+        value: "false"
+    autoDeploy: true
