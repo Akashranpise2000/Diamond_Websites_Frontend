@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import logoImage from '../../assets/new-logo.png';
 import './AdminSidebar.css';
 
 const AdminSidebar = () => {
@@ -53,7 +54,13 @@ const AdminSidebar = () => {
   return (
     <div className="admin-sidebar">
       <div className="sidebar-header">
-        <h2>Admin Panel</h2>
+        <Link to="/" className="sidebar-logo">
+          <img 
+            src={logoImage} 
+            alt="Diamond House Cleaning Logo" 
+            className="sidebar-logo-image"
+          />
+        </Link>
         <p>Diamond House Cleaning</p>
       </div>
 

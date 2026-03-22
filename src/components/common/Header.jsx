@@ -3,7 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { logout } from '../../redux/slices/authSlice';
 import { FaBars, FaTimes, FaUser, FaSignOutAlt, FaCalendarAlt, FaCog, FaPhone, FaEnvelope, FaSearch, FaHome, FaConciergeBell, FaInfo, FaBlog, FaEnvelopeOpen } from 'react-icons/fa';
-import logoImage from '../../assets/Screenshot_2024-08-23_at_7.42.43_AM-removebg-preview.webp';
+import logoImage from '../../assets/new-logo.png';
 import './Header.css';
 
 const Header = () => {
