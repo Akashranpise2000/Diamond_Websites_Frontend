@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { FaCalendar, FaUser, FaClock, FaArrowLeft, FaShareAlt, FaTag } from 'react-icons/fa';
-import { getPostBySlug, categories, blogPosts } from '../data/blogData';
+import { getPostBySlug, blogPosts } from '../data/blogData';
 import './Blog.css';
 
 const BlogPost = () => {

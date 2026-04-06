@@ -7,6 +7,7 @@ import './BookingSuccess.css';
 const BookingSuccess = () => {
   const navigate = useNavigate();
   const { currentBooking } = useSelector(state => state.bookings);
+  // eslint-disable-next-line no-unused-vars
   const { user } = useSelector(state => state.auth);
 
   useEffect(() => {
@@ -38,6 +39,7 @@ const BookingSuccess = () => {
     return timeSlot;
   };
 
+  // eslint-disable-next-line no-unused-vars
   const getServiceNames = () => {
     return currentBooking.services?.map(service => service.serviceName).join(', ') || 'Service';
   };

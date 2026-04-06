@@ -32,7 +32,7 @@ const AdminOrders = () => {
   useEffect(() => {
     fetchBookings();
     fetchStats();
-  }, [filters]);
+  }, [filters, fetchBookings, fetchStats]);
 
   const fetchBookings = () => {
     dispatch(getAllBookingsAdmin({

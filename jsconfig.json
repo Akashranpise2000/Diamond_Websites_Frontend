@@ -1,21 +1,18 @@
 {
   "compilerOptions": {
-    "baseUrl": "src",
+    "baseUrl": ".",
+    "ignoreDeprecations": "6.0",
     "paths": {
-      "@/*": ["./*"],
-      "@components/*": ["components/*"],
-      "@pages/*": ["pages/*"],
-      "@redux/*": ["redux/*"],
-      "@utils/*": ["utils/*"],
-      "@hooks/*": ["hooks/*"],
-      "@data/*": ["data/*"],
-      "@assets/*": ["assets/*"],
-      "@styles/*": ["styles/*"],
-      "@routes/*": ["routes/*"]
-    },
-    "checkJs": false,
-    "module": "esnext",
-    "moduleResolution": "bundler"
+      "*": ["src/*"],
+      "@components/*": ["src/components/*"],
+      "@pages/*": ["src/pages/*"],
+      "@redux/*": ["src/redux/*"],
+      "@utils/*": ["src/utils/*"],
+      "@hooks/*": ["src/hooks/*"],
+      "@data/*": ["src/data/*"],
+      "@assets/*": ["src/assets/*"],
+      "@styles/*": ["src/styles/*"]
+    }
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules", "build"]

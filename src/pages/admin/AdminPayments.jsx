@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { toast } from 'react-toastify';
 import {
   getAllPaymentsAdmin,
   getPaymentStatsAdmin,
@@ -28,7 +27,7 @@ const AdminPayments = () => {
   useEffect(() => {
     fetchPayments();
     fetchStats();
-  }, [filters]);
+  }, [filters, fetchPayments, fetchStats]);
 
   const fetchPayments = () => {
     dispatch(getAllPaymentsAdmin({

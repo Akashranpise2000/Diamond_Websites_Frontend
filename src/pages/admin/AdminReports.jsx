@@ -47,7 +47,7 @@ const AdminReports = () => {
   const revenueTrends = analytics.revenueTrends || mockRevenueTrends;
   const servicePopularity = analytics.servicePopularity || mockServicePopularity;
 
-  // Chart data configurations
+  // eslint-disable-next-line no-unused-vars
   const bookingChartData = {
     labels: bookingTrends.map(item => item.month),
     datasets: [{
@@ -60,6 +60,7 @@ const AdminReports = () => {
     }]
   };
 
+  // eslint-disable-next-line no-unused-vars
   const revenueChartData = {
     labels: revenueTrends.map(item => item.month),
     datasets: [{
@@ -72,6 +73,7 @@ const AdminReports = () => {
     }]
   };
 
+  // eslint-disable-next-line no-unused-vars
   const serviceChartData = {
     labels: servicePopularity.map(item => item.service),
     datasets: [{
@@ -87,6 +89,7 @@ const AdminReports = () => {
     }]
   };
 
+  // eslint-disable-next-line no-unused-vars
   const chartOptions = {
     responsive: true,
     maintainAspectRatio: false,

@@ -24,7 +24,7 @@ const AdminServices = () => {
 
   useEffect(() => {
     fetchServices();
-  }, [filters, sortBy, sortOrder]);
+  }, [filters, sortBy, sortOrder, fetchServices]);
 
   const fetchServices = () => {
     dispatch(getServices({

@@ -17,7 +17,7 @@ const AdminContacts = () => {
 
   useEffect(() => {
     fetchContacts();
-  }, [filters, sortBy, sortOrder]);
+  }, [filters, sortBy, sortOrder, fetchContacts]);
 
   const fetchContacts = () => {
     dispatch(getContacts({

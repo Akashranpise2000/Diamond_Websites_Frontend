@@ -1,7 +1,7 @@
 import React, { useState, useMemo } from 'react';
 import { Link } from 'react-router-dom';
-import { FaSearch, FaCalendar, FaUser, FaClock, FaArrowRight } from 'react-icons/fa';
-import { blogPosts, categories, getFeaturedPosts, searchPosts } from '../data/blogData';
+import { FaSearch, FaCalendar, FaClock, FaArrowRight } from 'react-icons/fa';
+import { blogPosts, categories, getFeaturedPosts } from '../data/blogData';
 import './Blog.css';
 
 const Blog = () => {

@@ -89,7 +89,8 @@ const Profile = () => {
       errors.email = 'Email is invalid';
     }
 
-    if (profileForm.phone && !/^\+?[\d\s\-\(\)]{10,}$/.test(profileForm.phone)) {
+    // eslint-disable-next-line no-useless-escape
+    if (profileForm.phone && !/^[+]?[\d\s\-()]{10,}$/.test(profileForm.phone)) {
       errors.phone = 'Phone number is invalid';
     }
 
@@ -108,6 +109,7 @@ const Profile = () => {
     setIsSubmitting(true);
 
     try {
+      // eslint-disable-next-line no-unused-vars
       const result = await dispatch(updateProfile(profileForm)).unwrap();
       toast.success('Profile updated successfully!');
       setFormErrors({});

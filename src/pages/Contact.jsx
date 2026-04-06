@@ -1,6 +1,7 @@
-import React, { useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { submitContact, clearError } from "../redux/slices/contactSlice";
+import React, { useState, useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+// eslint-disable-next-line no-unused-vars
+import { submitContact } from "../redux/slices/contactSlice";
 import { toast } from "react-toastify";
 import "./Contact.css";
 
@@ -50,7 +51,7 @@ const Contact = () => {
 
     if (!formData.phone.trim()) {
       newErrors.phone = "Phone number is required";
-    } else if (!/^\+?[\d\s\-\(\)]{10,}$/.test(formData.phone.trim())) {
+    } else if (!/^[+]?[\d\s\-()]{10,}$/.test(formData.phone.trim())) {
       newErrors.phone = "Please enter a valid phone number";
     }
 

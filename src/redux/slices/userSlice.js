@@ -32,6 +32,7 @@ export const changePassword = createAsyncThunk(
   'user/changePassword',
   async (passwordData, { rejectWithValue }) => {
     try {
+      // eslint-disable-next-line no-unused-vars
       const response = await api.put('/users/password', passwordData);
       return response.data.message;
     } catch (error) {

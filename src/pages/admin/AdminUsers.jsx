@@ -31,7 +31,7 @@ const AdminUsers = () => {
 
   useEffect(() => {
     fetchUsers();
-  }, [filters.users]);
+  }, [filters.users, fetchUsers]);
 
   const fetchUsers = () => {
     dispatch(getAllUsers({
